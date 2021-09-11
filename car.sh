@@ -1,7 +1,7 @@
 #!/bin/bash
 
-CAR1="Hyundai"
-CAR2="Subaru"
+CAR1="Your car name here"
+CAR2="Other car name here"
 
 cd data/
 
@@ -14,25 +14,3 @@ elif [ ! -d "$CAR2" ] && [ ! -f "$CAR2" ]; then
     mv openpilot $CAR2 && mv $CAR1 openpilot
     echo "Now operating on $CAR1."
 fi
-
-#read -p "Which car do you want to DEACTIVATE? " CAR_DEACTIVATE
-#read -p  "Which car do you want to ACTIVATE? " CAR_ACTIVATE
-
-#function changecar(){
-#    echo "Deactivating $1 and activating $2"
-#    mv openpilot $1
-#    mv $2 openpilot
-#}
-
-#changecar $CAR_DEACTIVATE $CAR_ACTIVATE
-
-#read -p "Which car do you want to DEACTIVATE? " CAR_DEACTIVATE
-#echo "DEACTIVATING... $CAR_DEACTIVATE"
-#mv openpilot $CAR_DEACTIVATE 
-
-
-#read -p  "Which car do you want to ACTIVATE? " CAR_ACTIVATE 
-#echo "ACTIVATING... $CAR_ACTIVATE"
-#mv $CAR_ACTIVATE openpilot
-
-#echo "$CAR_ACTIVATE activated!"
