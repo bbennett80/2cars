@@ -1,7 +1,7 @@
 #!/bin/bash
 
-CAR1="Hyundai"
-CAR2="Subaru"
+CAR1="CAR1"
+CAR2="CAR2"
 
 cd data/
 
